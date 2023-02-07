@@ -1,0 +1,54 @@
+/* ------------------tarjetas superiores----------- */
+.tarjetas-inicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    .card{
+        background-color: rgb(30, 30, 30);
+        height: auto;
+        max-width: 20rem;
+    }
+    .card-body{
+        display: flex;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+/* ------------------tarjetas inferiores----------- */
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    color: #ffffff;
+    height: 100%;
+    padding: 60px;
+    .card{
+        background-color: #212529;
+        margin: 30px;
+        height: 10rem;
+        width: 20rem;
+    }
+    .card:hover{
+        box-shadow: 15px 15px 1px -8px rgb(210, 170, 0);
+        transition-property: all;
+        transition-duration: 1s;
+        transform: scale(1.02);
+    }
+    .card-body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+    }
+}

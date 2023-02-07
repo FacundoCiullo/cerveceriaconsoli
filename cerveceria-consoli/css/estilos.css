@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../img/background-wood.avif);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  min-height: 120vh;
+}
+
+/* --------------widget-whatsapp-------------- */
+.whatsapp {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .whatsapp {
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    z-index: 1;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-animation: efecto 2s infinite;
+            animation: efecto 2s infinite;
+  }
+  @-webkit-keyframes efecto {
+    0% {
+      box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    }
+    100% {
+      box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+    }
+  }
+  @keyframes efecto {
+    0% {
+      box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    }
+    100% {
+      box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+    }
+  }
+}
+/* -------------encabezado-all-sections--------------- */
+.encabezado-inicio {
+  background-image: url(../img/portada.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 60vh;
+}
+
+.encabezado-productos {
+  background-image: url(../img/portada-cerveza.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 60vh;
+}
+
+.encabezado-eventos {
+  background-image: url(../img/evento.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 60vh;
+}
+
+.encabezado-contacto {
+  background-image: url(../img/redes.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 60vh;
+}
+
+.encabezado-nosotros {
+  background-image: url(../img/nosotros.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 60vh;
+}
+
+@media (max-width: 768px) {
+  .encabezado-inicio,
+.encabezado-productos,
+.encabezado-eventos,
+.encabezado-contacto,
+.encabezado-nosotros {
+    min-height: 25rem;
+  }
+}
+@media (max-width: 420px) {
+  .encabezado-inicio,
+.encabezado-productos,
+.encabezado-eventos,
+.encabezado-contacto,
+.encabezado-nosotros {
+    min-height: 20rem;
+  }
+}
+/* --------------tittle-h1-all-sections-------------- */
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 4rem 0 0 15rem;
+  background-color: rgb(20, 20, 20);
+}
+.titulo h1 {
+  font-family: "economic";
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1200px) {
+  .titulo {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 6rem 0 0 0;
+  }
+}
+/* --------------formulario-email--------------- */
+.formulario {
+  background-color: rgb(30, 30, 30);
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 55px;
+  min-height: 15rem;
+}
+.formulario .boton-sub {
+  margin: 1rem;
+}
+
+/* --------------------footer------------------- */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(18, 18, 18);
+  padding: 3rem;
+}
+footer .firma {
+  color: #ffffff;
+  padding: 15px;
+}
+footer .icon {
+  width: 30px;
+  margin: 20px;
+}
+footer .redes {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header .navbar {
+  opacity: 96%;
+  box-shadow: 0 0px 20px 10px #000000;
+}
+header .navbar .nav-item {
+  border-radius: 40px;
+  font-size: 14px;
+  margin: 0px 30px;
+}
+header .navbar .nav-item:hover {
+  background-color: rgba(140, 140, 140, 0.3);
+  transition-property: all;
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+header .navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+header .navbar .navbar-collapse .navbar-nav {
+  align-items: center;
+}
+header .navbar .logo {
+  margin: 0 15px;
+}
+header .navbar .logo:hover {
+  transition-property: all;
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
+/* ------------------tarjetas superiores----------- */
+.tarjetas-inicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+.tarjetas-inicio .card {
+  background-color: rgb(30, 30, 30);
+  height: auto;
+  max-width: 20rem;
+}
+.tarjetas-inicio .card-body {
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* ------------------tarjetas inferiores----------- */
+.tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  color: #ffffff;
+  height: 100%;
+  padding: 60px;
+}
+.tarjetas .card {
+  background-color: #212529;
+  margin: 30px;
+  height: 10rem;
+  width: 20rem;
+}
+.tarjetas .card:hover {
+  box-shadow: 15px 15px 1px -8px rgb(210, 170, 0);
+  transition-property: all;
+  transition-duration: 1s;
+  transform: scale(1.02);
+}
+.tarjetas .card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* ------------------titulos----------- */
+.div-title {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  text-align: center;
+}
+.div-title h2 {
+  font-family: "economic";
+  padding: 15px;
+}
+
+/* ------------------tarjetas estilos----------- */
+.section-estilos {
+  box-shadow: 0px -5px 5px 10px rgb(20, 20, 20);
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+}
+.section-estilos .div-title {
+  padding: 6rem 0 0 0;
+}
+
+.tarjetas-estilos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.tarjetas-estilos img {
+  max-height: 20rem;
+  width: auto;
+  padding: 40px;
+}
+.tarjetas-estilos .card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-size: cover;
+  background-color: rgb(20, 20, 20);
+  box-shadow: 12px 12px 1px -8px rgb(0, 0, 0);
+  margin: 10px;
+  padding: 10px 0;
+  max-width: 40rem;
+  min-width: auto;
+}
+.tarjetas-estilos .card:hover {
+  box-shadow: 20px 20px 1px -8px rgb(0, 0, 0);
+  transition-property: all;
+  transition-duration: 1s;
+  transform: scale(1.01);
+}
+.tarjetas-estilos .card:hover img {
+  transition-property: all;
+  transition-duration: 1s;
+  transform: scale(1.12);
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-body .card-title {
+  font-family: "Economica";
+}
+
+/* ------------------tarjetas formatos----------- */
+.formatos {
+  display: flex;
+  justify-content: center;
+}
+
+.section-formatos {
+  display: flex;
+  box-shadow: 0px -15px 10px 10px rgb(20, 20, 20);
+  background-color: rgb(20, 20, 20);
+  background-size: cover;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4rem;
+}
+.section-formatos .div-title {
+  padding: 0 0 6rem 0;
+}
+.section-formatos .tarjetas-formatos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-items: center;
+  background-color: rgb(20, 20, 20);
+  gap: 4rem;
+}
+.section-formatos .card {
+  display: flex;
+  background-size: cover;
+  background-color: rgb(30, 30, 30);
+  margin: 10px;
+  min-height: 10rem;
+  max-width: 25rem;
+  min-width: auto;
+}
+.section-formatos img {
+  max-height: 20rem;
+  width: auto;
+}
+.section-formatos .card:hover {
+  box-shadow: 15px 15px 1px -8px rgb(210, 170, 0);
+  transition-property: all;
+  transition-duration: 1s;
+  transform: scale(1.02);
+}
+
+/* -----------------media query----------- */
+@media (max-width: 768px) {
+  .tarjetas-estilos .card {
+    margin: 0 2rem;
+  }
+  .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media (max-width: 1150px) {
+  .div-title {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+}
+/* -----------------section-eventos------------------- */
+.galeria {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  padding-bottom: 2rem;
+}
+.galeria img {
+  width: 100%;
+  max-height: 20rem;
+  border-radius: 15px;
+}
+.galeria img:hover {
+  border-radius: 25px;
+  box-shadow: 15px 15px 5px -8px rgb(0, 0, 0);
+  transition-property: all;
+  transition-duration: 1s;
+  transform: scale(1.06);
+}
+
+/* -----------------section-eventos-grid-------------- */
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1080px) {
+  .fotos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 1800px) {
+  .fotos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* --------------section-nosotros--------------- */
+.somos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 1rem 5rem 1rem;
+  gap: 4rem;
+}
+
+.foto-somos {
+  box-shadow: 15px 15px 10px -8px rgb(0, 0, 0);
+  border-radius: 10px;
+  max-width: 30rem;
+  width: 100%;
+}
+
+.texto-somos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: rgba(18, 18, 18, 0.662);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 30rem;
+}
+
+/* ---------------section-contactos-------------- */
+.cont .tarjetas {
+  padding: 0 0 6rem 0;
+}
+
+.titulo-burguer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem 0 0 0;
+  background-color: rgba(18, 18, 18, 0.833);
+  padding: 20px;
+}
+.titulo-burguer h1 {
+  font-family: "economic";
+  color: rgb(255, 255, 255);
+}
+
+/* ------------section-contactos-grid--------- */
+.b-home {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  margin: 4rem;
+  padding: 1rem 0 4rem 0;
+  gap: 2rem;
+}
+
+@media (min-width: 468px) {
+  .b-home {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+@media (min-width: 768px) {
+  .b-home {
+    grid-template-columns: repeat(3, 3fr);
+  }
+}
+.foto-home {
+  box-shadow: 15px 15px 10px -8px rgb(20, 20, 20);
+  border-radius: 10px;
+  max-width: 35rem;
+  max-height: 35rem;
+  width: 100%;
+}
+
+.foto-home:hover {
+  box-shadow: 15px 15px 1px -8px rgb(200, 0, 0);
+  transition-property: all;
+  transition-duration: 1s;
+  transform: scale(1.02);
+}/*# sourceMappingURL=estilos.css.map */

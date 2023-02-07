@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../img/background-wood.avif);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    min-height: 120vh;
+}
+/* --------------widget-whatsapp-------------- */
+.whatsapp{
+    display: none;
+}
+@media (max-width: 768px){
+    .whatsapp{
+        display: block;
+        position: fixed;
+        right: 15px;
+        bottom: 20px;
+        z-index: 1;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        padding: 0px;
+        border-radius: 50% 50% 50% 50%;
+        animation: efecto 2s infinite;
+    }
+    @keyframes efecto{
+        0%{
+            box-shadow: 0 0 0 0 rgb(255, 255, 255);
+        }
+        100%{
+            box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+        }
+    }
+}
+/* -------------encabezado-all-sections--------------- */
+
+@mixin encabezado{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 60vh;
+}
+.encabezado-inicio{
+    background-image: url(../img/portada.avif);
+    @include encabezado;
+}
+.encabezado-productos{
+    background-image: url(../img/portada-cerveza.avif);
+    @include encabezado;
+}
+.encabezado-eventos{
+    background-image: url(../img/evento.avif);
+    @include encabezado;
+}
+.encabezado-contacto{
+    background-image: url(../img/redes.avif);
+    @include encabezado;
+}
+.encabezado-nosotros{
+    background-image: url(../img/nosotros.avif);
+    @include encabezado;
+}
+@media (max-width: 768px){
+    .encabezado-inicio,
+    .encabezado-productos,
+    .encabezado-eventos,
+    .encabezado-contacto,
+    .encabezado-nosotros{
+        min-height: 25rem;
+    }
+}
+@media (max-width: 420px){
+    .encabezado-inicio,
+    .encabezado-productos,
+    .encabezado-eventos,
+    .encabezado-contacto,
+    .encabezado-nosotros{
+        min-height: 20rem;
+    }
+}
+/* --------------tittle-h1-all-sections-------------- */
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 4rem  0 0 15rem;
+    background-color: rgb(20, 20, 20);
+    h1{
+        font-family: "economic";
+        color: rgb(255, 255, 255);
+    }
+}
+@media (max-width: 1200px){
+    .titulo{
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: 6rem  0 0 0;
+    }
+}
+/* --------------formulario-email--------------- */
+.formulario{
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 55px;
+    min-height: 15rem;
+    .boton-sub{
+        margin: 1rem;
+    }
+}
+/* --------------------footer------------------- */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(18, 18, 18);
+    padding: 3rem;
+    .firma{
+        color: #ffffff;
+        padding: 15px;
+        
+    }
+    .icon{
+        width: 30px;
+        margin: 20px;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 15px;
+    }
+}
+@media (max-width: 768px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
